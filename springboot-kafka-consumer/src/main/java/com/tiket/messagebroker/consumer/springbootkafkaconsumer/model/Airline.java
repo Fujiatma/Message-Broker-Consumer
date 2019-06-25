@@ -1,10 +1,20 @@
 package com.tiket.messagebroker.consumer.springbootkafkaconsumer.model;
 
+import org.springframework.data.mongodb.core.mapping.Document;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+
+@Document(collection = "Airline")
 public class Airline{
 	private int id;
 	private String code;
